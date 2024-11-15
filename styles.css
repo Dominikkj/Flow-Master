@@ -1,0 +1,184 @@
+body {
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f4f4f4;
+    width: 98%;
+    min-height: 100vh;
+    background-color: #343f4f;
+    margin: 2px solid red;
+
+}
+
+
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+
+    color: white;
+
+    padding: 10px 10px;
+
+    text-align: center;
+
+}
+
+
+
+header h1 {
+
+    margin: 0;
+
+}
+
+
+
+nav ul {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+
+nav ul li {
+
+    display: inline;
+
+    margin: 0 15px;
+
+}
+
+
+
+nav ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+
+
+main {
+
+    padding: 20px;
+
+}
+
+
+
+section {
+        /* margin-bottom: 20px; */
+}
+
+
+
+footer {
+
+    text-align: center;
+
+    padding: 10px 0;
+
+    background-color: #333;
+
+    color: white;
+
+}
+
+.slideshow-container {
+    position: relative;
+    border: 2px double red;
+    max-width: 1000px;
+    
+}
+.slideshow-container .carrossel{
+    font-size: 0;
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+   
+   
+    
+}
+
+.carrossel {
+    /* display: flex; */
+    transition: transform 0.5s ease;
+    
+   
+
+}
+
+.carrossel img{
+    height: auto;
+    object-fit: inherit;
+    width: calc(100% / 3);
+    margin-left: 9px;
+}
+.carrossel img:first-child{
+    margin-left: 0px;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(77, 4, 248);
+    font-weight: bold;
+    font-size: 38px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    transform:translateY(-120%)
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 3px 3px 3px;
+}
+
+@media screen and (max-width: 900px) {
+    .carrossel img{
+        width: calc(100% / 2);
+    }
+}
+@media screen and (max-width: 550px) {
+    .carrossel img{
+        /* width: calc(50%/1); */
+        margin: 0 auto;
+    }
+    header{
+        align-items: center;
+    }
+    header h1{
+        font-size: 1.2rem;
+        
+    }
+    nav ul li {
+
+        margin: 0 5px;
+    
+    }
+    
+}

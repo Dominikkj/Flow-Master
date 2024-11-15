@@ -1,44 +1,103 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Flow Master</title>
+    <title>Flow Master - Empresa de Software</title>
+    <link rel="icon" href="img/sts1.ico" type="imagem/x-icon">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
+
     <header>
-        <nav class="navigation">
-            <title>Flor Master</title>
-            <a href="#" class="logo">Flow Master</a>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Sobre</a></li>
-                <li class="nav-item"><a href="#">Parceiros</a></li>
-                <li class="nav-item"><a href="#">Contato</a></li>
-                <i class='bx bx-search-alt'></i>
+
+        <h1>Flow Master</h1>
+        <nav>
+
+            <ul>
+
+                <li><a href="#about">Sobre</a></li>
+
+                <li><a href="#services">Serviços</a></li>
+
+                <li><a href="#contact">Contato</a></li>
+
             </ul>
-            <div class="menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+
         </nav>
+
     </header>
+    <section class="slideshow-container">
+        <!-- <div class="bolinhas-btn">
+             bolinha que representa cada foto 
+             <input type="radio" name="bola-btn" id="bola1">
+             <input type="radio" name="bola-btn" id="bola2">
+             <input type="radio" name="bola-btn" id="bola3">
+             <input type="radio" name="bola-btn" id="bola4">
+        </div> -->
+        <div class="carrossel">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <img src="img/cell flowMaster.png"> 
+            <img src="img/Flow Master apps black.png"> 
+            <img src="img/Flow Master apps para você (2).png"> 
+            <img src="img/Flow Master apps robo e cel.png">
+            <img src="img/Flow Master apps super.png">
+            <img src="img/Flow Master robo e cel.png">
+            <img src="img/Flow Master super cel inglês.png"> 
+            <img src="img/sts1.jpeg"> 
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
     <main>
-        <section class="home">
-            <div class="home-text">
-                <h4 class="text-h4">Bem Vindo</h4>
-                <h1 class="text-h1">Automatize seus pedidos com o melhor software do mercado</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt</p>
-                <a href="#" class="home-btn">Adquira já</a>
-            </div>
-            <div class="home-img">
-                <img src="img/teste2.png" alt="">
-            </div>
+
+        <section id="about">
+
+            <h2>Sobre Nós</h2>
+
+            <p>A Flow Master é uma empresa líder no desenvolvimento de software, dedicada a criar soluções inovadoras e
+                eficientes para nossos clientes.</p>
+
         </section>
+
+        <section id="services">
+
+            <h2>Nossos Serviços</h2>
+
+            <ul>
+
+                <li>Desenvolvimento de Software Personalizado</li>
+
+                <li>Consultoria em TI</li>
+
+                <li>Manutenção e Suporte Técnico</li>
+
+            </ul>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Contato</h2>
+
+            <p>Email: contato@flowmaster.com</p>
+
+            <p>Telefone: (84) 1234-5678</p>
+
+        </section>
+
     </main>
-    <script src="script.js"></script>
+
+    <footer>
+
+        <p>&copy; 2024 Flow Master. Todos os direitos reservados.</p>
+
+    </footer>
+
 </body>
+
 </html>
